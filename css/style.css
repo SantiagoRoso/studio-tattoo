@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.header a:hover {
+    color: #FCFC62;
+}
+
 .logo {
     width: 200px;
     height: 200px;
