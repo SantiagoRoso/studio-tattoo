@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* CSS STYLE NAVBAR */
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header li,
+.footer li {
+    margin: 15px;
+}
+
+.header a,
+.footer a {
+    color: #F0F4EF;
+    text-decoration: none;
+}
+
+
+/* CSS STYLE HOME */
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 20px;
+
+}
+
+.grid-container img {
+    height: 250px;
+}
+
+.grid-container div {
+    width: 300px;
+    overflow: hidden;
+}
+
+.seccion1 h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+section {
+    min-height: 90vh;
+}
+
+/* CSS STYLE PROJECTS */
+
+.seccion1-galeria h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.grid-container-galeria {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.grid-container-galeria img {
+    height: 400px;
+}
+
+.grid-container-galeria div {
+    width: 320px;
+    overflow: hidden;
+}
+
+/* CSS STYLE ABOUT US */
+
+.seccion1-nosotros {
+    text-align: center;
+}
+
+.seccion1-nosotros h1,
+.seccion1-nosotros p {
+    text-align: center;
+    padding: 15px;
+}
+
+.seccion1-nosotros img {
+    height: 250px;
+    width: 300px;
+}
+
+/* CSS STYLE CONTACT */
+
+.seccion1-contacto h1 {
+    margin-bottom: 15px;
+}
+
+.seccion1-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.form-contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form-contact input {
+    margin-bottom: 15px;
+}
+
+/* MEDIA QUERYS MOBILE LAST */
+
+@media (max-width: 1020px) {
+    .grid-container-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 670px) {
+    .grid-container-galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header li {
+        margin-bottom: 10px;
+        margin-left: 8px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer ul {
+        width: 90px;
+    }
+}
