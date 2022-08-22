@@ -8,7 +8,7 @@
 /* CSS STYLE NAVBAR */
 
 .header {
-    background-color: black;
+    background-image: linear-gradient(to right, black, #393333 );
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,6 +40,10 @@
 .title {
     text-align: center;
     padding: 10px;
+}
+
+.fondo { 
+    background-image: linear-gradient(to bottom,bisque, white );
 }
 
 .grid-container {
